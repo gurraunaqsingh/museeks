@@ -15,5 +15,11 @@ module.exports = merge(common, {
         NODE_ENV: '"development"',
       },
     }),
+    new webpack.NamedModulesPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
   ],
+  devServer: {
+    port: 4000,
+    hot: true,
+  },
 });
