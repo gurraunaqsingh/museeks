@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import Icon from 'react-fontawesome';
 import { connect } from 'react-redux';
-
 import classnames from 'classnames';
+
+import Icon from './Icon.react';
 
 import * as PlayerActions from '../../actions/PlayerActions';
 

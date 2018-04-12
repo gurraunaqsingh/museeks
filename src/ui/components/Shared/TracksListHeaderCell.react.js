@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
-import Icon from 'react-fontawesome';
+
+import Icon from './Icon.react';
 
 import * as LibraryActions from '../../actions/LibraryActions';
 

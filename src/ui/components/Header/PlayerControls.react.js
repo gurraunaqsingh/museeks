@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import Icon from 'react-fontawesome';
+import Icon from '../Shared/Icon.react';
 import VolumeControl from './VolumeControl.react';
 
 import * as PlayerActions from '../../actions/PlayerActions';
@@ -36,7 +36,7 @@ export default class PlayerControls extends PureComponent {
           title={this.props.playerStatus === 'play' ? 'Pause' : 'Play'}
           onClick={PlayerActions.playPause}
         >
-          <Icon name={this.props.playerStatus === 'play' ? 'pause' : 'play'} fixedWidth />
+          <Icon name={this.props.playerStatus === 'play' ? 'pause' : 'play'} />
         </button>
         <button
           type='button'

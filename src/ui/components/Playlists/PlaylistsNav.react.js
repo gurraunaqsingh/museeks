@@ -2,10 +2,10 @@ import electron from 'electron';
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { ButtonGroup, Button } from 'react-bootstrap';
-import Icon from 'react-fontawesome';
 
 import * as PlaylistsActions from '../../actions/PlaylistsActions';
 
+import Icon from '../Shared/Icon.react';
 import PlaylistsNavLink from './PlaylistsNavLink.react';
 
 const { Menu } = electron.remote;

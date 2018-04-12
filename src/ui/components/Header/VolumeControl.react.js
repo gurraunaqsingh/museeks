@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Icon from 'react-fontawesome';
 import classnames from 'classnames';
 
+import Icon from '../Shared/Icon.react';
 import * as PlayerActions from '../../actions/PlayerActions';
 import Player from '../../lib/player';
 
@@ -43,7 +43,11 @@ export default class VolumeControl extends Component {
   }
 
   getVolumeIcon(volume, muted) {
-    return muted || volume === 0 ? 'volume-off' : volume > 0.5 ? 'volume-up' : 'volume-down';
+    if (muted) return 'volumeMuted';
+    else if (volume < 0.33) return 'volumeLow';
+    else if (volume < 0.66) return 'volumeMedium';
+
+    return 'volumeHigh';
   }
 
   setVolume(e) {

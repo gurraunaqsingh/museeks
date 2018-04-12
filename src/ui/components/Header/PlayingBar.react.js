@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { Dropdown } from 'react-bootstrap';
-import Icon from 'react-fontawesome';
 
 import Queue from './Queue.react';
 import PlayingBarInfos from './PlayingBarInfos.react';
+import Icon from '../Shared/Icon.react';
 import Cover from '../Shared/Cover.react';
 
 
@@ -42,7 +42,7 @@ export default class PlayingBar extends Component {
         <div className='now-playing-queue'>
           <Dropdown id='queue-dropdown' className='queue-dropdown'>
             <Dropdown.Toggle noCaret className='queue-toggle'>
-              <Icon name='list' />
+              <Icon name='queue' />
             </Dropdown.Toggle>
             <Dropdown.Menu>
               <Queue

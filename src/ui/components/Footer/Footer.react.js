@@ -3,7 +3,7 @@ import { withRouter, Route, Switch } from 'react-router';
 import { NavLink } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import { Row, Col, ButtonGroup, ProgressBar } from 'react-bootstrap';
-import Icon from 'react-fontawesome';
+import Icon from '../Shared/Icon.react';
 import { connect } from 'react-redux';
 import classnames from 'classnames';
 
@@ -70,7 +70,7 @@ class Footer extends Component {
                 className='btn btn-default view-link'
                 title='Library'
               >
-                <Icon name='align-justify' fixedWidth />
+                <Icon name='library' />
               </NavLink>
               <NavLink
                 to='/playlists'
@@ -78,7 +78,7 @@ class Footer extends Component {
                 className='btn btn-default view-link '
                 title='Playlists'
               >
-                <Icon name='star' fixedWidth />
+                <Icon name='playlists' />
               </NavLink>
               <NavLink
                 to='/settings'
@@ -86,7 +86,7 @@ class Footer extends Component {
                 className='btn btn-default view-link'
                 title='Settings'
               >
-                <Icon name='gear' fixedWidth />
+                <Icon name='settings' />
               </NavLink>
             </ButtonGroup>
           </Col>
