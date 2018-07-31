@@ -150,6 +150,7 @@ export const getDefaultMetadata = () => ({
     of: 0,
   },
   year: null,
+  mtime: "mtime",
 });
 
 export const parseMusicMetadata = (data, trackPath) => {
@@ -238,6 +239,13 @@ export const getMetadata = async (trackPath) => {
       console.warn(`An error occured while getting ${trackPath} duration: ${err}`);
     }
   }
+
+  var stats = fs.statSync(trackPath);
+  var mtime = new Date(util.inspect(stats.mtime));
+  mtime = mtime.toString();
+  
+  console.log(mtime);
+  console.log(typeof(mtime))
 
   return metadata;
 };

@@ -53,6 +53,12 @@ class TracksListHeader extends React.Component {
           icon={TracksListHeader.getIcon(sort, SORT.DURATION)}
         />
         <TracksListHeaderCell
+          className="cell-duration"
+          title="mtime"
+          sortBy={enableSort ? SORT.TITLE : null}
+          icon={TracksListHeader.getIcon(sort, SORT.TITLE)}
+        />
+        <TracksListHeaderCell
           className="cell-artist"
           title="Artist"
           sortBy={enableSort ? SORT.ARTIST : null}
