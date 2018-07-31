@@ -8,6 +8,7 @@ export const ALBUM = 'ALBUM';
 export const TITLE = 'TITLE';
 export const DURATION = 'DURATION';
 export const GENRE = 'GENRE';
+export const DATE = 'DATE';
 
 export const ASC = 'ASC';
 export const DSC = 'DSC';

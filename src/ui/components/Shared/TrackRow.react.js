@@ -78,18 +78,17 @@ export default class TrackRow extends PureComponent {
         <div className="cell cell-duration">
           { parseDuration(track.duration) }
         </div>
-        <div className="cell cell-mtime">
-          {track.mtime}
-        </div>
+
         <div className="cell cell-artist">
           { track.artist[0] }
         </div>
         <div className="cell cell-album">
           { track.album }
         </div>
-        <div className="cell cell-genre">
-          { track.genre.join(', ') }
+        <div className="cell cell-dateAdded">
+          {track.dateAdded}
         </div>
+
       </div>
     );
   }
