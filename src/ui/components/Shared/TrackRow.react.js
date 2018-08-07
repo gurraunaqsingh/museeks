@@ -86,7 +86,7 @@ export default class TrackRow extends PureComponent {
           { track.album }
         </div>
         <div className="cell cell-dateAdded">
-          {track.dateAdded}
+          {track.date}
         </div>
 
       </div>

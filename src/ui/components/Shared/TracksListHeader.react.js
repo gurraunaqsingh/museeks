@@ -67,8 +67,8 @@ class TracksListHeader extends React.Component {
         <TracksListHeaderCell
           className="cell-dateAdded"
           title="Date Added"
-          sortBy={enableSort ? SORT.TITLE : null}
-          icon={TracksListHeader.getIcon(sort, SORT.TITLE)}
+          sortBy={enableSort ? SORT.DATE : null}
+          icon={TracksListHeader.getIcon(sort, SORT.DATE)}
         />
 
       </div>

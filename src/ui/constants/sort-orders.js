@@ -27,6 +27,31 @@ export const ARTIST = {
   ],
 };
 
+export const DATE = {
+  ASC: [ // Default
+    [
+      'date',
+      parseArtist,
+      'year',
+      'loweredMetas.album',
+      'disk.no',
+      'track.no',
+    ],
+    null,
+  ],
+  DSC: [
+    [
+      'date',
+      parseArtist,
+      'year',
+      'loweredMetas.album',
+      'disk.no',
+      'track.no',
+    ],
+    ['desc'],
+  ],
+};
+
 export const TITLE = {
   ASC: [
     [

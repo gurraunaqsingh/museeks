@@ -150,7 +150,7 @@ export const getDefaultMetadata = () => ({
     of: 0,
   },
   year: null,
-  dateAdded: "date",
+  date: "date",
 });
 
 export const parseMusicMetadata = (data, trackPath) => {
@@ -242,10 +242,11 @@ export const getMetadata = async (trackPath) => {
 
   // Get recently modified date
   var stats = fs.statSync(trackPath);
-  var _dateAdded = new Date(util.inspect(stats.mtime));
-  _dateAdded = _dateAdded.toString();
-  metadata.dateAdded = _dateAdded;
+  var _date = new Date(util.inspect(stats.mtime));
+  var justdate = _date.toISOString().slice(0, 10);
   
+  // store date
+  metadata.date = justdate;
 
   return metadata;
 };
