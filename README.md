@@ -13,6 +13,15 @@ It uses:
 * [electron (used to be atom-shell)](https://github.com/atom/electron/) for embedded browser
 * [React.js](https://facebook.github.io/react/) as front-end framework and [Flux](https://facebook.github.io/flux/) with  [Redux](http://redux.js.org/) as data-flow pattern
 
+##### NOTE: This is a fork of [https://github.com/KeitIG/museeks](https://github.com/KeitIG/museeks). I liked the app in itself but it lacked certain key features that I wanted, and there is not much discussion or support by the original developer currently (at least I don't think so). See Changelog below to see whats different.
+
+
+### Changelog
+
+#### v1.8.4 August 7, 2018
+- added list sorting by 'Date Added'
+
+
 ---
 
 ### Features
@@ -49,7 +58,7 @@ Builds and installers can be found [on this page](https://github.com/KeitIG/muse
 
 Please consider that **`master` is unstable**.
 
-- `git clone git@github.com:KeitIG/museeks.git`
+- `git clone git@github.com:raunaqness/museeks.git`
 - `cd museeks`
 - `npm install`
 - `npm run build` or `npm run dev`
